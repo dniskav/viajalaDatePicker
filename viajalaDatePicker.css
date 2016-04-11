@@ -1,10 +1,11 @@
-.VdatePicker {
-    display: block;
+.viajaladatePicker {
+    display: inline-block;
     width: 180px;
 }
 
 .inputContainer {
     display: flex;
+    position: relative;
 }
 
 .selectorHeader {
@@ -13,15 +14,22 @@
 }
 
 .selectorContainer {
+    background: #eee;
     font: 12px arial;
     color: #666;
-    display: flex;
+    display: none;
+    position: absolute;
     flex-direction: column;
+    z-index: 10;
 }
 
 .fullDatecontainer {
     width: 100%;
     text-align: center;
+}
+
+.calendarDay {
+    cursor: pointer;
 }
 
 .selectorHeader {
@@ -38,4 +46,17 @@
 
 .month:after {
     content: ' - ';
+}
+
+input.VdatePicker{
+    vertical-align: bottom;
+    height: 20px;
+}
+
+.calendarIcon {
+    width: 23px;
+    border: none;
+    height: 25px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH5JREFUeNpi/P//PwM6YGRkrIcyGxkIA5xqWRioBLA5koVUDVh8iVOOCShZDsT/kTGSxv+EMB615UxA8Q4G2oAOkJ/+08hwcJifpZXhNHU5EwMNAQtSsnNAS2IHKBGjucuHruE0T+ejEToaoaMROlgjlBmIfwCxCw3MrgAIMAAMWlXZjIAO3QAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat ;
 }
