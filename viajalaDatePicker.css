@@ -1,0 +1,41 @@
+.VdatePicker {
+    display: block;
+    width: 180px;
+}
+
+.inputContainer {
+    display: flex;
+}
+
+.selectorHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.selectorContainer {
+    font: 12px arial;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullDatecontainer {
+    width: 100%;
+    text-align: center;
+}
+
+.selectorHeader {
+    align-items: center;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.month:before {
+    content: ' - ';
+}
+
+.month:after {
+    content: ' - ';
+}
